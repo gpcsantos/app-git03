@@ -1,9 +1,21 @@
+import { useStade, useEffect } from "react";
+import { Routes, Route } from "react-router-dom";
+import Home from "./Pages/Home/Home";
+import Produtos from "./pages/Produtos";
+import Footer from "./components/Footer";
+import Header from "./components/Header";
+
 function App() {
   return (
     <>
-      <div className="p-5 bg-cyan-950 text-gray-200 flex justify-center ">
-        <h1 className="text-2xl font-bold">Projeto BASE</h1>
-      </div>
+      <main className="w-full mt-18">
+        <Header />
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/produtos" element={<Produtos />} />
+        </Routes>
+        <Footer />
+      </main>
     </>
   );
 }
