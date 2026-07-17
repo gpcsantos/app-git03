@@ -1,4 +1,4 @@
-import Bannerhero from "../../Components/Banner/Bannerhero.jsx";
+import Bannerhero from "../../components/Banner/Bannerhero.jsx";
 import Quemsomos from "../../components/Quemsomos/Quemsomos.jsx";
 
 function Home() {
